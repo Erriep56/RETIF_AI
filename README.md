@@ -8,7 +8,7 @@ Ce dépôt contient les livrables réalisés dans le cadre de mon stage de Maste
 
 ### 1. 🧠 Conversion du thésaurus Garnier (XML-RDF → JSON & TXT)
 
-Le dossier [1_conversion_garnier](https://github.com/Erriep56/RETIF_AI/blob/main/1_conversion_garnier) contient un script Python permettant de convertir le fichier XML-RDF du **thésaurus Garnier (INHA)** en deux formats plus facilement exploitables : JSON et TXT.
+Le dossier [1_conversion_garnier](https://github.com/Erriep56/RETIF_IA/blob/main/1_conversion_garnier) contient un script Python permettant de convertir le fichier XML-RDF du **thésaurus Garnier (INHA)** en deux formats plus facilement exploitables : JSON et TXT.
 
 Le fichier XML-RDF du thesaurus Garnier (INHA) est déjà contenu dans le dépôt.
 
@@ -46,12 +46,12 @@ Deux fichiers sont ainsi générés :
 
 ### 2. 🖼️ Téléchargement des images du RETIF & Application Streamlit avec CLIP
 
-Le dossier [2_projet_clip](https://github.com/Erriep56/RETIF_AI/blob/main/2_projet_clip) contient :
+Le dossier [2_projet_clip](https://github.com/Erriep56/RETIF_IA/blob/main/2_projet_clip) contient :
 - **Deux notebooks Jupyter** :
-  - Le **notebook 1** [1_recup_images_AGORHA.ipynb](https://github.com/Erriep56/RETIF_AI/blob/main/2_projet_clip/1_recup_images_AGORHA.ipynb) permet le téléchargement des images du RETIF via l’API d’AGORHA
-  - Le **notebook 2** [2_embeddings_CLIP.ipynb](https://github.com/Erriep56/RETIF_AI/blob/main/2_projet_clip/2_embeddings_CLIP.ipynb) sert à générer les embeddings des images à l’aide du de la technologie CLIP
+  - Le **notebook 1** [1_recup_images_AGORHA.ipynb](https://github.com/Erriep56/RETIF_IA/blob/main/2_projet_clip/1_recup_images_AGORHA.ipynb) permet le téléchargement des images du RETIF via l’API d’AGORHA
+  - Le **notebook 2** [2_embeddings_CLIP.ipynb](https://github.com/Erriep56/RETIF_IA/blob/main/2_projet_clip/2_embeddings_CLIP.ipynb) sert à générer les embeddings des images à l’aide du de la technologie CLIP
   
-- Un fichier python [app.py](https://github.com/Erriep56/RETIF_AI/blob/main/2_projet_clip/app.py) permettant de lancer l'**application Streamlit** pour la recherche visuelle d’images à partir de texte et d'images, en s’appuyant sur les embeddings CLIP générés par le Notebook 2.
+- Un fichier python [app.py](https://github.com/Erriep56/RETIF_IA/blob/main/2_projet_clip/app.py) permettant de lancer l'**application Streamlit** pour la recherche visuelle d’images à partir de texte et d'images, en s’appuyant sur les embeddings CLIP générés par le Notebook 2.
 
 
 #### 🏃‍♀️ Lancer l'application Streamlit
