@@ -49,7 +49,7 @@ Deux fichiers sont ainsi générés :
 Le dossier [2_projet_clip](https://github.com/Erriep56/RETIF_AI/blob/main/2_projet_clip) contient :
 - **Deux notebooks Jupyter** :
   - Le **notebook 1** [1_recup_images_AGORHA.ipynb](https://github.com/Erriep56/RETIF_AI/blob/main/2_projet_clip/1_recup_images_AGORHA.ipynb) permet le téléchargement des images du RETIF via l’API d’AGORHA
-  - Le **notebook 2** [1_recup_images_AGORHA.ipynb](https://github.com/Erriep56/RETIF_AI/blob/main/2_projet_clip/2_embeddings_CLIP.ipynb) sert à générer les embeddings des images à l’aide du de la technologie CLIP
+  - Le **notebook 2** [2_embeddings_CLIP.ipynb](https://github.com/Erriep56/RETIF_AI/blob/main/2_projet_clip/2_embeddings_CLIP.ipynb) sert à générer les embeddings des images à l’aide du de la technologie CLIP
   
 - Un fichier python [app.py](https://github.com/Erriep56/RETIF_AI/blob/main/2_projet_clip/app.py) permettant de lancer l'**application Streamlit** pour la recherche visuelle d’images à partir de texte et d'images, en s’appuyant sur les embeddings CLIP générés par le Notebook 2.
 
