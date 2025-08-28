@@ -8,7 +8,7 @@ Ce dépôt contient les livrables réalisés dans le cadre de mon stage de Maste
 
 ### 1. 🧠 Conversion du thésaurus Garnier (XML-RDF → JSON & TXT)
 
-Le dossier [1_conversion_garnier](https://github.com/Erriep56/RETIF_IA/1_conversion_garnier) contient un script Python permettant de convertir le fichier XML-RDF du **thésaurus Garnier (INHA)** en deux formats plus facilement exploitables : JSON et TXT.
+Le dossier [1_conversion_garnier](https://github.com/Erriep56/RETIF_IA/tree/main/1_conversion_garnier) contient un script Python permettant de convertir le fichier XML-RDF du **thésaurus Garnier (INHA)** en deux formats plus facilement exploitables : JSON et TXT.
 
 Le fichier XML-RDF du thesaurus Garnier (INHA) est déjà contenu dans le dépôt.
 
