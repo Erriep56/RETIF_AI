@@ -37,26 +37,26 @@ def load_embeddings():
 data = load_embeddings()
 
 # Interface
-st.title("🔬 Recherche visuelle avec CLIP 🧠")
+st.title("Recherche visuelle d'images du RETIF avec CLIP")
 # Texte d'introduction
 st.text(
-    "🖼️ Bienvenue sur l'application Streamlit pour rechercher des images du RETIF grâce à CLIP ! 🖼️\n"
-    "🎇 Assurez-vous d'avoir téléchargé les images et préparé les embeddings avec CLIP. 🌄"
+    "Bienvenue sur l'application Streamlit pour rechercher des images du RETIF grâce à CLIP !\n"
+    "Assurez-vous d'avoir téléchargé les images et préparé les embeddings avec CLIP."
 )
 
 col1, col2 = st.columns(2)
 
 # Recherche textuelle
 with col1:
-    text_query = st.text_input("🔠 Recherche par mots-clés (ex : pyramid, dog...) 🔡")
+    text_query = st.text_input("Recherche par mots-clés (ex : pyramid, dog...)")
 
 # Recherche par image
 with col2:
-    uploaded_image = st.file_uploader("📲 Ou uploadez une image pour chercher par contenu 🖥️", type=["jpg", "jpeg", "png"])
+    uploaded_image = st.file_uploader("Ou uploadez une image pour chercher par contenu", type=["jpg", "jpeg", "png"])
 
 # Résultats
 if not text_query and not uploaded_image:
-    st.info("🕵️‍♂️ Entrez un mot-clé ou uploadez une image pour lancer une recherche. 🕵️‍♀️")
+    st.info("Entrez un mot-clé ou uploadez une image pour lancer une recherche.")
 else:
     if text_query:
         with torch.no_grad():
@@ -93,4 +93,5 @@ else:
     cols = st.columns(5)
     for idx, (score, filename) in enumerate(results[:50]):
         with cols[idx % 5]:
+
             st.image(os.path.join(images_folder, filename), caption=f"{filename}\nScore: {score:.2f}", width='stretch')
