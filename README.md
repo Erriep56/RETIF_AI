@@ -8,7 +8,7 @@ Ce dépôt contient les livrables réalisés dans le cadre de mon stage de Maste
 
 ### 1. 🧠 Conversion du thésaurus Garnier (XML-RDF → JSON & TXT)
 
-Le dossier [1_conversion_garnier](https://github.com/Erriep56/RETIF_IA/tree/main/1_conversion_garnier) contient un script Python permettant de convertir le fichier XML-RDF du **thésaurus Garnier (INHA)** en deux formats plus facilement exploitables : JSON et TXT.
+Le dossier [1_conversion_garnier](https://github.com/Erriep56/RETIF_IA/tree/main/1_conversion_garnier) contient un script Python permettant de convertir le fichier XML-RDF du **thésaurus Garnier (INHA)** en deux formats plus facilement exploitables : JSON et TXT et un Jupyter Notebook permettant de faire du matching en fonction d'une liste de titres.
 
 Le fichier XML-RDF du thesaurus Garnier (INHA) est déjà contenu dans le dépôt.
 
@@ -26,6 +26,9 @@ ou
 cd 1_conversion_garnier
 pip install -r requirements.txt
 ```
+
+Le fichier Jupyter Notebook utilise le thésaurus ainsi généré pour chercher les termes du thésaurus parmi les titres. Le script n'est pas terminé complétement mais il est fonctionnel.
+
 
 
 #### 📄 Fichiers générés
@@ -75,7 +78,7 @@ streamlit run app.py
 
 ### 3. 📗 Protocole : Indexation avec Panoptic
 
-Un fichier PDF décrivant **le protocole d’utilisation de Panoptic** pour indexer les images du RETIF à l'aide du thesaurus Garnier. Ce document sert de guide pour reproduire l’indexation ou adapter le processus à d'autres corpus.
+Un fichier Markdown décrivant **le protocole d’utilisation de Panoptic** pour indexer les images du RETIF à l'aide du thesaurus Garnier. Ce document sert de guide pour reproduire l’indexation ou adapter le processus à d'autres corpus.
 
 ---
 
